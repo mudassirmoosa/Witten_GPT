@@ -1,8 +1,10 @@
+# Witten_GPT
+
 This is the repository for a project on finetuning a 124M parameter GPT-2 model on Edward Witten's papers available on arXiv. The main goal of this project is to implement what we have learned about training large language models. Another goal was to explore whether a language model could learn the distinctive writing style and technical vocabulary in theoretical physics research papers.
 
 ## EXPERIMENTS
 
-We ran various experiments with different choices of learning rates and learning rate schedules. The goal of performing different experiments is to find the learning rate configuration with the best performance. We measure the performance by comparing the validation loss and the 'gap' defined as the absolute difference between the training and the validation loss. 
+We ran various experiments with different choices of learning rates and learning rate schedules. The goal of performing different experiments was to find the learning rate configuration with the best performance. We measured the performance by comparing the validation loss and the 'gap' defined as the absolute difference between the training and the validation loss. 
 
 We found that the following two configurations led to the best performance: 
 1. Training the first two epochs with a constant learning rate $5\times 10^{-5}$ and the third and fourth epochs with a constant learning rate of $3\times 10^{-5}$.
