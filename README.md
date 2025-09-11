@@ -1,6 +1,8 @@
 # Witten_GPT
 
-This is the repository for a project on finetuning a 124M parameter GPT-2 model on Edward Witten's papers available on arXiv. The main goal of this project is to implement what we have learned about training large language models. Another goal was to explore whether a language model could learn the distinctive writing style and technical vocabulary in theoretical physics research papers.
+This is the repository for a project on finetuning a 124M parameter GPT-2 model on Edward Witten's papers available on arXiv. The main goal of this project is to implement what we have learned about training large language models. Another goal was to explore whether a language model could learn the distinctive writing style and technical vocabulary in theoretical physics research papers. 
+
+To gain hands-on experience with the training process, we implement the training loop from scratch rather than using the trainer object from Hugging Face. This implementation can be found in supplementary_gpt_trainer.py code file.
 
 ## EXPERIMENTS
 
